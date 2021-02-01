@@ -1,0 +1,86 @@
+[
+  {
+    "name": "プレミアムロースト" , 
+    "price": "500",
+    "imagePath": "./assets/images/premium_roast.png",
+    "itemCaption":"スタンダードな無糖のコーヒーです。</br>奥深い苦味と豊かな風味をぜひお楽しみください。</br>我々のこだわりの一本です。<br><br>原料となる豆は、</br>環境に配慮した製法を用いており、</br>公正な取引(フェアトレード)によって仕入れたものです。<br><br>アイスボトルでのお届けとなりますが、温めてお飲みいただくことも可能です！",
+    "category":{"taste": "bitter", "strength": "strong", "milk": "without", "caffeine": "with"}
+  },
+  {
+    "name": "フレッシュ&amp;スイート" , 
+    "price": "550",
+    "imagePath": "./assets/images/fresh_and_sweet.png",
+    "itemCaption":"自慢のミルクとシロップをバランス良く加えたカフェラテです。</br>優しい口当たりと甘さをぜひお楽しみください。<br><br>原料となる豆は、</br>環境に配慮した製法を用いており、</br>公正な取引(フェアトレード)によって仕入れたものです。<br><br>アイスボトルでのお届けとなりますが、温めてお飲みいただくことも可能です！",
+    "category":{"taste": "sweet", "strength": "strong", "milk": "with", "caffeine": "with"}
+  },
+  {
+    "name": "デカフェブレンド" , 
+    "price": "450",
+    "imagePath": "./assets/images/caffeine_free.png",
+    "itemCaption":"こちらはデカフェの製品です。</br>気軽に召し上がれます。</br>何度も味わいたくなる爽やかな苦味をお楽しみください。<br><br>原料となる豆は、</br>環境に配慮した製法を用いており、</br>公正な取引(フェアトレード)によって仕入れたものです。<br><br>アイスボトルでのお届けとなりますが、温めてお飲みいただくことも可能です！",
+    "category":{"taste": "bitter", "strength": "weak", "milk": "without", "caffeine": "without"}
+  },
+  {
+    "name": "カジュアルカフェオレ" , 
+    "price": "500",
+    "imagePath": "./assets/images/premium_roast.png",
+    "itemCaption":"こちらはデカフェの製品です。</br>気軽に召し上がれます。</br>優しい口当たりと甘さをぜひお楽しみください。<br><br>原料となる豆は、</br>環境に配慮した製法を用いており、</br>公正な取引(フェアトレード)によって仕入れたものです。<br><br>アイスボトルでのお届けとなりますが、温めてお飲みいただくことも可能です！",
+    "category":{"taste": "sweet", "strength": "weak", "milk": "with", "caffeine": "without"}
+  },
+  {
+    "name": "プレミアムロースト" , 
+    "price": "500",
+    "imagePath": "./assets/images/premium_roast.png",
+    "itemCaption":"スタンダードな無糖のコーヒーです。</br>奥深い苦味と豊かな風味をぜひお楽しみください。</br>我々のこだわりの一本です。<br><br>原料となる豆は、</br>環境に配慮した製法を用いており、</br>公正な取引(フェアトレード)によって仕入れたものです。<br><br>アイスボトルでのお届けとなりますが、温めてお飲みいただくことも可能です！",
+    "category":{"taste": "bitter", "strength": "strong", "milk": "without", "caffeine": "with"}
+  },
+  {
+    "name": "フレッシュ&amp;スイート" , 
+    "price": "550",
+    "imagePath": "./assets/images/fresh_and_sweet.png",
+    "itemCaption":"自慢のミルクとシロップをバランス良く加えたカフェラテです。</br>優しい口当たりと甘さをぜひお楽しみください。<br><br>原料となる豆は、</br>環境に配慮した製法を用いており、</br>公正な取引(フェアトレード)によって仕入れたものです。<br><br>アイスボトルでのお届けとなりますが、温めてお飲みいただくことも可能です！",
+    "category":{"taste": "sweet", "strength": "strong", "milk": "with", "caffeine": "with"}
+  },
+  {
+    "name": "デカフェブレンド" , 
+    "price": "450",
+    "imagePath": "./assets/images/caffeine_free.png",
+    "itemCaption":"こちらはデカフェの製品です。</br>気軽に召し上がれます。</br>何度も味わいたくなる爽やかな苦味をお楽しみください。<br><br>原料となる豆は、</br>環境に配慮した製法を用いており、</br>公正な取引(フェアトレード)によって仕入れたものです。<br><br>アイスボトルでのお届けとなりますが、温めてお飲みいただくことも可能です！",
+    "category":{"taste": "bitter", "strength": "weak", "milk": "without", "caffeine": "without"}
+  },
+  {
+    "name": "カジュアルカフェオレ" , 
+    "price": "500",
+    "imagePath": "./assets/images/premium_roast.png",
+    "itemCaption":"こちらはデカフェの製品です。</br>気軽に召し上がれます。</br>優しい口当たりと甘さをぜひお楽しみください。<br><br>原料となる豆は、</br>環境に配慮した製法を用いており、</br>公正な取引(フェアトレード)によって仕入れたものです。<br><br>アイスボトルでのお届けとなりますが、温めてお飲みいただくことも可能です！",
+    "category":{"taste": "sweet", "strength": "weak", "milk": "with", "caffeine": "without"}
+  },
+  {
+    "name": "プレミアムロースト" , 
+    "price": "500",
+    "imagePath": "./assets/images/premium_roast.png",
+    "itemCaption":"スタンダードな無糖のコーヒーです。</br>奥深い苦味と豊かな風味をぜひお楽しみください。</br>我々のこだわりの一本です。<br><br>原料となる豆は、</br>環境に配慮した製法を用いており、</br>公正な取引(フェアトレード)によって仕入れたものです。<br><br>アイスボトルでのお届けとなりますが、温めてお飲みいただくことも可能です！",
+    "category":{"taste": "bitter", "strength": "strong", "milk": "without", "caffeine": "with"}
+  },
+  {
+    "name": "フレッシュ&amp;スイート" , 
+    "price": "550",
+    "imagePath": "./assets/images/fresh_and_sweet.png",
+    "itemCaption":"自慢のミルクとシロップをバランス良く加えたカフェラテです。</br>優しい口当たりと甘さをぜひお楽しみください。<br><br>原料となる豆は、</br>環境に配慮した製法を用いており、</br>公正な取引(フェアトレード)によって仕入れたものです。<br><br>アイスボトルでのお届けとなりますが、温めてお飲みいただくことも可能です！",
+    "category":{"taste": "sweet", "strength": "strong", "milk": "with", "caffeine": "with"}
+  },
+  {
+    "name": "デカフェブレンド" , 
+    "price": "450",
+    "imagePath": "./assets/images/caffeine_free.png",
+    "itemCaption":"こちらはデカフェの製品です。</br>気軽に召し上がれます。</br>何度も味わいたくなる爽やかな苦味をお楽しみください。<br><br>原料となる豆は、</br>環境に配慮した製法を用いており、</br>公正な取引(フェアトレード)によって仕入れたものです。<br><br>アイスボトルでのお届けとなりますが、温めてお飲みいただくことも可能です！",
+    "category":{"taste": "bitter", "strength": "weak", "milk": "without", "caffeine": "without"}
+  },
+  {
+    "name": "カジュアルカフェオレ" , 
+    "price": "500",
+    "imagePath": "./assets/images/premium_roast.png",
+    "itemCaption":"こちらはデカフェの製品です。</br>気軽に召し上がれます。</br>優しい口当たりと甘さをぜひお楽しみください。<br><br>原料となる豆は、</br>環境に配慮した製法を用いており、</br>公正な取引(フェアトレード)によって仕入れたものです。<br><br>アイスボトルでのお届けとなりますが、温めてお飲みいただくことも可能です！",
+    "category":{"taste": "sweet", "strength": "weak", "milk": "with", "caffeine": "without"}
+  }
+]

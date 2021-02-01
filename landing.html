@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="T.K." />
+    <meta name="description" content="..." />
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Balzaque&nbsp;&#124;&nbsp;コーヒーを気軽に&#12289;好きなだけ&#12290;</title>
+    <!-- Use jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- drawer.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css"
+    />
+    <!-- jquery & iScroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+    <!--Other CSS-->
+    <link rel="stylesheet" href="./assets/stylesheets/reset.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/application.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/style_landing.css" />
+  </head>
+  <body class="drawer drawer--right">
+    <div class="l-wrap">
+      <!-- modal -->
+      <div id="name-derivation-modal" class="l-modalWrap">
+        <div class="p-home-derivationModal">
+          <div class="p-home-derivationModal__modalHeader">
+            <h2>&quot;Balzaque&quot;の名前の由来は&hellip;&hellip;</h2>
+            <div class="p-home-modalHeader__icon--crossMark">
+              <span></span>
+            </div>
+          </div>
+          <div class="p-home-derivationModal__modalBody">
+            <div class="p-home-modalBody__modalLeft">
+              <img
+                src="./assets/images/balzac.jpg"
+                alt="オノレ・ド・バルザックの写真"
+                class="p-home-modalLeft__balzacPhoto--PC"
+              />
+              <h3>オノレ&middot;ド&middot;バルザック</h3>
+              <h4>
+                &#40;&nbsp;C&#46;E&#46;&nbsp;1799&nbsp;&#12316;&nbsp;1850&nbsp;&#41;
+              </h4>
+              <small>
+                <a href="https://cafend.net/french-coffee/#150">
+                  &#12302;Cafend&#058;フランスの文豪バルザックのコーヒー習慣&#12303;
+                </a>
+              </small>
+            </div>
+            <div class="p-home-modalBody__modalRight">
+              <h3>
+                コーヒーを愛した小説家&#58;<br />
+                オノレ&middot;ド&middot;バルザック
+              </h3>
+              <p>
+                オノレ&middot;ド&middot;バルザック&#40;以下&#12289;バルザック&#41;は<br />
+                19世紀フランスに活躍した小説家です&#12290;<br />
+                バルザックは執筆活動中&#12289;コーヒーをこよなく愛し&#12289;<br />
+                １日に50杯ものコーヒーを飲んでいたそうです&#12290;<br />
+                <br />
+                バルザックのようにコーヒーをたくさん飲む人のために&#12289;<br />
+                我々は&#12289;サービスを始めようと思いました&#12290;<br />
+                それがこのサービス&#12289;&quot;Balzaque&quot;の始まりです&#12290;<br />
+              </p>
+              <div class="p-home-modalRight__reasonEmphasized">
+                <h4>
+                  Balzac&#40;バルザック&#41; <br />&#x2b;<br />
+                  que&#40;&#12316;のような性質のもの&#41;<br />
+                  ↓<br />
+                </h4>
+                <h2>&quot;Balzaque&quot;</h2>
+              </div>
+              <br />
+            </div>
+          </div>
+          <div class="p-home-derivationModal__modalFooter">
+            <p class="p-home-modalFooter__closeBar">ウィンドウを閉じる</p>
+          </div>
+        </div>
+      </div>
+      <!-- header -->
+      <header class="l-header">
+        <!-- SP style -->
+        <div class="l-header--SP">
+          <!-- ハンバーガーボタン -->
+          <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+          </button>
+          <!-- ナビゲーションの中身 -->
+          <nav class="drawer-nav">
+            <ul class="drawer-menu">
+              <li class="drawer-brand">Menu</li>
+              <li><a href="#about" class="drawer-menu-item">service</a></li>
+              <li><a href="#product" class="drawer-menu-item">product</a></li>
+              <li><a href="#price" class="drawer-menu-item">price</a></li>
+              <li>
+                <a href="#start" class="drawer-menu-item">strat&nbsp;Balzaque</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- PC style -->
+        <div class="l-header--PC">
+          <a href="#top">
+            <img
+              src="./assets/images/logo.png"
+              alt="ロゴマーク"
+              class="c-header__logo"
+            />
+          </a>
+          <nav>
+            <ul class="c-header__navList">
+              <li><a href="#about" class="c-navList__navLink">service</a></li>
+              <li>
+                <a href="#product" class="c-navList__navLink">product</a>
+              </li>
+              <li><a href="#price" class="c-navList__navLink">price</a></li>
+              <li>
+                <a href="#start" class="c-navList__navLink">
+                  &nbsp;start&nbsp;Balzaque&nbsp;
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- hero -->
+      <div id="top" class="p-home-hero">
+        <h1 class="p-home-hero__title">Balzaque</h1>
+        <h2 class="p-home-hero__caption--SP">
+          コーヒーを気軽に&#12289;<br />好きなだけ&#12290;
+        </h2>
+        <h2 class="p-home-hero__caption--PC">コーヒーを気軽に&#12289;好きなだけ&#12290;</h2>
+      </div>
+      <!-- main -->
+      <main class="l-main">
+        <!-- about -->
+        <section id="about" class="p-home-about">
+          <h2 class="p-home-about__title--SP">What&#x27;s<br />&quot;Balzaque&quot;&nbsp;&#x3f;</h2>
+          <h2 class="p-home-about__title--PC">What&#x27;s&nbsp;&quot;Balzaque&quot;&nbsp;&#x3f;</h2>
+
+          <h3 class="p-home-about__caption">
+            Balzaqueはボトルコーヒーの販売と定期配達のサービスです&#12290;
+          </h3>
+          <!-- SP style -->
+          <ul class="p-home-about__explainList--SP">
+            <li><h4>ご自宅までコーヒーをお届けします&#12290;</h4></li>
+            <li><small>&#9660;画像をタップすると詳細が現れます&#9660;</small></li>
+            <li>
+              <div class="p-home-explain__caption">
+                <div class="p-home-caption__box">
+                  <p>
+                    Balzaqueはボトルコーヒーの<br />
+                    販売配達サービスです&#12290;<br />
+                    ご注文いただいた商品をご自宅や&#12289;<br />
+                    ご指定の住所まで選りすぐりの<br />
+                    コーヒーをお届けいたします&#12290;<br />
+                    <br />
+                    専用のクーラーボックスを設置し&#12289;<br />
+                    そこに保管した状態でのお届けも可能です&#12290;<br />
+                    配達時刻を気にすることなく<br />
+                    お気軽にお受け取りいただけます&#033;
+                  </p>
+                  <small>
+                    <a
+                      href="https://warehouse-images.com/04-traffic/106-illust-free.html"
+                    >
+                      配達員｜配送業者 - 無料イラスト素材
+                    </a>
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li><h4>ボトルを開栓後&#12289;すぐに召し上がれます&#12290;</h4></li>
+            <li><small>&#9660;画像をタップすると詳細が現れます&#9660;</small></li>
+            <li>
+              <div class="p-home-explain__caption">
+                <div class="p-home-caption__box">
+                  <p>
+                    Balzaqueでは&#12289;自社工場で淹れたコーヒーを<br />
+                    ボトルに封入した状態でお届けします&#12290;<br />
+                    開栓後すぐに飲める状態でお届けしますので&#12289;豆を挽く作業や焙煎する手間がかかりません&#12290;
+                    <br /><br />
+                    コーヒーを煎れるための道具や知識がなくても<br />
+                    簡単にお楽しみいただけるほか&#12289;<br />
+                    時間がないときなどにもおすすめです&#12290;<br />
+                    <b>
+                      &#x203B;コーヒー豆の販売は取り扱っておりません&#12290;ご了承ください&#12290;
+                    </b>
+                  </p>
+                  <small>
+                    <a href="https://www.photo-ac.com/profile/847939">cheetah</a
+                    >さんによる<a href="https://www.photo-ac.com/">写真AC</a
+                    >からの写真
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li><h4>健康に良い飲み方を提案いたします&#12290;</h4></li>
+            <li><small>&#9660;画像をタップすると詳細が現れます&#9660;</small></li>
+            <li>
+              <img
+                src="./assets/images/measuring.jpg"
+                alt="健康に良い飲み方をご提案いたします&#12290;"
+                class="p-home-explain__image"
+              />
+              <div class="p-home-explain__caption">
+                <div class="p-home-caption__box">
+                  <p>
+                    コーヒーは身体への影響が大きい飲み物です&#12290;<br />
+                    コーヒーに含まれるカフェインという成分を<br>
+                    短期間に過剰に摂取してしまうと&#12289;<br>
+                    お客様の健康面でのコンディションに<br>
+                    負担がかかるおそれがございます&#12290;<br />
+                    そこで我々は&#12289;さまざまな味や風味の<br>
+                    デカフェメニューを豊富に取り揃えました&#12290; <br />
+                    <br />
+                    また&#12289;メンバーページにて&#12289;ご注文の内容から<br />
+                    カフェイン量の合計などを計算し&#12289;<br />
+                    召し上がる上で健康に適したペースを<br />
+                    お客様ひとりひとりに向けて提案いたします&#12290;<br />
+                  </p>
+                  <small>
+                    <a href="https://www.photo-ac.com/profile/1107072"
+                      >クラウドfun</a
+                    >さんによる<a href="https://www.photo-ac.com/">写真AC</a
+                    >からの写真
+                  </small>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- PC style -->
+          <ul class="p-home-about__explainList--PC">
+            <li>
+              <img
+                src="./assets/images/transportation.png"
+                alt="ご指定の住所までコーヒーを配達いたします"
+                class="p-home-explain__image"
+              />
+              <div class="p-home-explain__caption">
+                <div class="p-home-caption__box">
+                  <h2>ご自宅までコーヒーをお届けします&#12290;</h2>
+                  <p>
+                    Balzaqueはボトルコーヒーの<br />
+                    販売配達サービスです&#12290;<br />
+                    ご注文いただいた商品を<br />
+                    ご自宅や&#12289;ご指定の住所まで<br />
+                    選りすぐりのコーヒーをお届けいたします&#12290;<br />
+                    <br />
+                    専用のクーラーボックスを設置し&#12289;<br />
+                    そこに保管した状態でのお届けも可能です&#12290;<br />
+                    配達時刻を気にすることなく<br />
+                    お気軽にお受け取りいただけます&#033;
+                  </p>
+                  <small>
+                    <a
+                      href="https://warehouse-images.com/04-traffic/106-illust-free.html"
+                    >
+                      配達員｜配送業者 - 無料イラスト素材
+                    </a>
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./assets/images/a_glass_of_coffee.jpg"
+                alt="ボトルを開栓後&#12289;すぐに召し上がれます&#12290;"
+                class="p-home-explain__image"
+              />
+              <div class="p-home-explain__caption">
+                <div class="p-home-caption__box">
+                  <h2>ボトルを開栓後&#12289;すぐに召し上がれます&#12290;</h2>
+                  <p>
+                    Balzaqueでは&#12289;自社工場で淹れたコーヒーを<br />
+                    ボトルに封入した状態でお届けします&#12290;<br />
+                    開栓後すぐに飲める状態でお届けしますので&#12289;<br />
+                    豆を挽く作業や焙煎する手間がかかりません&#12290;<br />
+                    <br />
+                    コーヒーを煎れるための道具や知識がなくても<br />
+                    簡単にお楽しみいただけるほか&#12289;<br />
+                    時間がないときなどにもおすすめです&#12290;<br />
+                    <br />
+                    <b>
+                      &#x203B;コーヒー豆の販売は取り扱っておりません&#12290;<br />
+                      ご了承ください&#12290;
+                    </b>
+                  </p>
+                  <small>
+                    <a href="https://www.photo-ac.com/profile/847939">cheetah</a
+                    >さんによる<a href="https://www.photo-ac.com/">写真AC</a
+                    >からの写真
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./assets/images/measuring.jpg"
+                alt="健康に良い飲み方をご提案いたします&#12290;"
+                class="p-home-explain__image"
+              />
+              <div class="p-home-explain__caption">
+                <div class="p-home-caption__box">
+                  <h2>
+                    お客様ひとりひとりに<br />
+                    健康に良い飲み方をご提案いたします&#12290;
+                  </h2>
+                  <p>
+                    コーヒーは身体への影響が大きい飲み物です&#12290;<br />
+                    コーヒーに含まれるカフェインという成分を<br />
+                    短期間に過剰に摂取してしまうと&#12289;健康面でのコンディションに<br>
+                    負担がかかるおそれがございます&#12290;<br />
+                    そこで我々は&#12289;さまざまな味や風味の<br>
+                    デカフェメニューを豊富に取り揃えました&#12290; <br />
+                    <br />
+                    また&#12289;メンバーページにて&#12289;ご注文の内容から<br />
+                    カフェイン量の合計などを計算し&#12289;<br />
+                    召し上がる上で健康に適したペースを<br />
+                    お客様ひとりひとりに向けて提案いたします&#12290;<br />
+                  </p>
+                  <small>
+                    <a href="https://www.photo-ac.com/profile/1107072"
+                      >クラウドfun</a
+                    >さんによる<a href="https://www.photo-ac.com/">写真AC</a
+                    >からの写真
+                  </small>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <p
+            id="derivation-back-point--SP"
+            class="p-home-about__derivationGuide"
+          >
+            ちなみに&#12289;サービスの名前の由来は&#x2026;<br />
+            <small>&#x203B;ボタンをタップすると詳細が現れます</small>
+          </p>
+          <!--btn-->
+          <div
+            id="derivation-open-btn--SP"
+            class="p-home-about__derivationBtn--SP u-derivation__btn--close"
+          >
+            <span></span>
+          </div>
+          <!--Accordion-->
+          <div
+            id="derivation__accordion--SP"
+            class="p-home-about__derivationAccordion u-derivation__accordion--close"
+          >
+            <h3 class="p-home-derivationAccordion__derivationTitle">
+              コーヒーを愛した小説家&#x3a;<br />
+            </h3>
+            <img
+              src="./assets/images/balzac.jpg"
+              alt="オノレ・ド・バルザックの写真"
+              class="p-home-derivationAccordion__balzacPhoto--SP"
+            />
+            <h3>オノレ&middot;ド&middot;バルザック</h3>
+            <h4>&#40;C&#46;E&#46;1799 &#xff5e; 1850&#41;</h4>
+            <small>
+              <a href="https://cafend.net/french-coffee/#150">
+                &#12302;Cafend&#058;フランスの文豪バルザックのコーヒー習慣&#12303;
+              </a>
+            </small>
+            <br />
+            <p>
+              オノレ&middot;ド&middot;バルザック&#40;以下&#12289;バルザック&#41;は<br />
+              19世紀フランスに活躍した小説家です&#12290;<br />
+              バルザックは生涯コーヒーをこよなく愛し&#12289;<br />
+              1日に50杯もコーヒーを飲んでいたそうです&#12290;<br />
+              <br />
+              バルザックのようにコーヒーを愛する人へ&#12289;<br />
+              我々はサービスを始めようと思いました&#12290;<br />
+              それがこの&#12289;&quot;Balzaque&quot;の始まりです&#12290;<br />
+              <br />
+            </p>
+            <div class="p-home-derivationAccordion__reasonEmphasized">
+              <h4>
+                Balzac&#40;バルザック&#41; <br />&#x2b;<br />
+                que&#40;&#xff5e;のような性質のもの&#41;<br />
+                ↓<br />
+              </h4>
+              <h2>&quot;Balzaque&quot;</h2>
+            </div>
+            <br />
+            <div
+              id="derivation-close-btn--SP"
+              class="p-home-about__derivationBtn--SP u-derivation__btn--close"
+            >
+              <span></span>
+            </div>
+            <p><small>&#x203B;ボタンをタップすると詳細が閉じます</small></p>
+          </div>
+          <div
+            id="derivation-open-btn--PC"
+            class="p-home-about__derivationBtn--PC"
+          >
+            <h2>由来を読む</h2>
+          </div>
+        </section>
+        <!--PRODUCT-->
+        <section id="product" class="p-home-product">
+          <h2 class="p-home-product__title">PRODUCT</h2>
+          <h3 class="p-home-product__caption--PC">
+            こだわりぬいた&#12289;多様なメニューを揃えております&#12290;<br />
+            &#40;以下はメニューの一例となります&#41;
+          </h3>
+          <h3 class="p-home-product__caption--SP">
+            こだわりぬいた&#12289;<br />
+            多様なメニューを揃えております&#12290;<br />
+            &#40;以下はメニューの一例となります&#41;
+          </h3>
+          <ul class="p-home-product__productionList">
+            <li>
+              <img
+                src="./assets/images/premium_roast.png"
+                alt="bitter"
+                class="p-home-productionList__productionImg"
+              />
+              <div class="p-home-productionList__productionCaption">
+                <!-- <h3>プレミアムロースト&#40;ビター&#41;</h3> -->
+                <h3>プレミアムロースト</h3>
+                <p>
+                  スタンダードな無糖の<br />
+                  コーヒーです&#12290;<br />
+                  奥深い苦味と豊かな風味を<br />
+                  ぜひお楽しみください&#12290;<br />
+                  我々のこだわりの一本です&#12290;
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./assets/images/fresh_and_sweet.png"
+                alt="fresh_and_sweet"
+                class="p-home-productionList__productionImg"
+              />
+              <div class="p-home-productionList__productionCaption">
+                <!-- <h3>フレッシュ＆スイート&#40;ミルク入り&#41;</h3> -->
+                <h3>フレッシュ＆スイート</h3>
+                <p>
+                  自慢のミルクとシロップを<br />
+                  バランス良く加えた<br />カフェラテです&#12290;<br />
+                  優しい口当たりと甘さを<br />
+                  ぜひお楽しみください&#12290;
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./assets/images/caffeine_free.png"
+                alt="caffeine_free"
+                class="p-home-productionList__productionImg"
+              />
+              <div class="p-home-productionList__productionCaption">
+                <!-- <h3>カフェインフリーブレンド&#40;無糖&#41;</h3> -->
+                <h3>デカフェブレンド</h3>
+                <p>
+                  デカフェのコーヒーです&#12290;<br />
+                  気軽に召し上がれます&#12290;<br />
+                  何度も味わいたくなる<br />
+                  爽やかな苦味を<br />お楽しみください&#12290;
+                </p>
+              </div>
+            </li>
+          </ul>
+          <!-- イラスト出典元 必ず記載する -->
+          <small class="p-home-product__reference">
+            <a href="https://jp.freepik.com/vectors/logo">
+              Freepik-jp.freepik.comによって作成されたlogoベクトル
+            </a>
+          </small>
+          <h3 class="p-home-product__announcement--SP">
+            この他にも&#12289;様々なメニューを<br />取りそろえております&#033;
+          </h3>
+          <h3 class="p-home-product__announcement--PC">
+            この他にも&#12289;様々なメニューを取りそろえております&#033;
+          </h3>
+        </section>
+        <!--PRICE-->
+        <section id="price" class="p-home-price">
+          <h2 class="p-home-price__title">PRICE</h2>
+          <h3 class="p-home-price__caption">サービスご利用の値段紹介です</h3>
+          <div class="p-home-price__priceChart">
+            <div class="p-home-priceChart__chartBox--standardPlan">
+              <h2 class="p-home-chartBox__planName">スタンダードプラン</h2>
+              <p class="p-home-chartBox__planCaption">
+                気軽で使いやすいプランです
+              </p>
+              <ul class="p-home-chartBox__planDetailList">
+                <li>
+                  <div class="p-home-planDetailList__planDetail--SP">
+                    <h3>配達日&#058;<br /></h3>
+                    <p>毎週水曜日にお届けいたします</p>
+                  </div>
+                  <div class="p-home-planDetailList__planDetail--PC">
+                    <h3>配達日&#058;<br /></h3>
+                    <p>毎週水曜日にお届けいたします<br /></p>
+                  </div>
+                  <br />
+                </li>
+                <li>
+                  <div class="p-home-planDetailList__planDetail--SP">
+                    <h3>ご利用料金&#058;<br /></h3>
+                    <p>
+                      ご注文と配送料以外に<br>
+                      維持費は発生しません<br />
+                    </p>
+                  </div>
+                  <div class="p-home-planDetailList__planDetail--PC">
+                    <h3>ご利用料金&#058;<br /></h3>
+                    <p>ご注文と配送料以外に<br>維持費は発生しません<br /></p>
+                  </div>
+                  <br />
+                </li>
+                <li>
+                  <div class="p-home-planDetailList__planDetail--SP">
+                    <h3>ご利用可能メニュー&#058;</h3>
+                    <p>
+                      全ての基本メニューが<br>
+                      ご利用いただけます<br />
+                    </p>
+                  </div>
+                  <div class="p-home-planDetailList__planDetail--PC">
+                    <h3>ご利用可能メニュー&#058;</h3>
+                    <p>
+                      全ての基本メニューが<br />
+                      ご利用いただけます<br />
+                      <small>※コーヒーは全て基本メニューです</small>
+                    </p>
+                  </div>
+                  <br />
+                </li>
+                <li>
+                  <h3 class="p-home-planDetailList__price--SP">
+                    プラン料金&#058;<br />
+                    <b>&nbsp;&yen;0&nbsp;&#047;&nbsp;月&nbsp;</b>
+                  </h3>
+                  <h3 class="p-home-planDetailList__price--PC">
+                    プラン料金&nbsp;&#058;<b>&nbsp;&yen;0&nbsp;&#047;&nbsp;月&nbsp;</b>
+                  </h3>
+                  <small class="p-home-planDetailList__footnote"
+                    >&#x203B;別途ご注文の料金が発生致します</small
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="p-home-priceChart__chartBox--premiumPlan">
+              <h2 class="p-home-chartBox__planName">プレミアムプラン</h2>
+              <p class="p-home-chartBox__planCaption">
+                サポートが充実したプランです
+              </p>
+              <ul class="p-home-chartBox__planDetailList">
+                <li>
+                  <div class="p-home-planDetailList__planDetail--SP">
+                    <h3>配達日&#058;<br /></h3>
+                    <p>
+                      オーダーの翌日に<br>
+                      配達いたします
+                    </p>
+                  </div>
+                  <div class="p-home-planDetailList__planDetail--PC">
+                    <h3>配達日&#058;<br /></h3>
+                    <p>オーダーの翌日に配達いたします</p>
+                  </div>
+                  <br />
+                </li>
+                <li>
+                  <div class="p-home-planDetailList__planDetail--SP">
+                    <h3>ご利用料金&#058;<br /></h3>
+                    <p>
+                      配送料は無料となり&#12289;<br />
+                      ご注文もプレミアム割引を<br>
+                      させていただきます
+                    </p>
+                  </div>
+                  <div class="p-home-planDetailList__planDetail--PC">
+                    <h3>ご利用料金&#058;</h3>
+                    <p>
+                      配送料は無料となり&#12289;<br />
+                      ご注文も割引価格となります
+                    </p>
+                  </div>
+                  <br />
+                </li>
+                <li>
+                  <div class="p-home-planDetailList__planDetail--SP">
+                    <h3>ご利用可能メニュー&#058;<br /></h3>
+                    <p>
+                      豪華仕様ボトルや<br>
+                      贈答用ラッピング等の<br />
+                      スペシャルオプションが<br>
+                      ご利用いただけます
+                    </p>
+                  </div>
+                  <div class="p-home-planDetailList__planDetail--PC">
+                    <h3>ご利用可能メニュー&#058;<br /></h3>
+                    <p>
+                      豪華仕様ボトルや贈答用包装等の<br />
+                      スペシャルオプションが<br />ご利用いただけます
+                    </p>
+                  </div>
+                  <br />
+                </li>
+                <li>
+                  <h3 class="p-home-planDetailList__price--SP">
+                    プラン料金&#058;<br />
+                    <b>&nbsp;&yen;980&nbsp;&#047;&nbsp;月&nbsp;&#40;税込&#41;</b>
+                  </h3>
+                  <h3 class="p-home-planDetailList__price--PC">
+                    プラン料金&nbsp;&#058;<b>&nbsp;&yen;980&nbsp;&#047;&nbsp;月&nbsp;&#40;税込&#41;</b>
+                  </h3>
+                  <small class="p-home-planDetailList__footnote">
+                    &#x203B;別途ご注文の料金が発生致します
+                  </small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!--START-->
+        <section id="start" class="p-home-start">
+          <h2 class="p-home-start__title">START&nbsp;Balzaque</h2>
+          <div class="p-home-start__caption">
+            <h3>Balzaqueを始めましょう</h3>
+            <p>以下をクリックしてBalzaqueを始めましょう&#033;<br /></p>
+          </div>
+          <a href="./index.html" class="p-home-start__btn--start">
+            <p class="p-home-btn__text--start">Let&#x27;s&nbsp;START<br>Balzaque</p>
+          </a>
+          <br />
+          <a href="#top" id="top-btn" class="p-home-start__btn--top">
+            <p class="p-home-btn__text--top">top</p>
+          </a>
+        </section>
+      </main>
+      <footer class="l-footer">
+        <ul class="c-footer__externalLinkList">
+          <li>
+            <a href="background.html" class="c-externalLinkList__externalLink"
+              >サービス背景</a
+            >
+          </li>
+          <li class="c-externalLinkList__slash">/</li>
+          <li>
+            <a
+              href="https://github.com/Tak-Kida"
+              class="c-externalLinkList__externalLink"
+            >
+              運営者情報
+            </a>
+          </li>
+          <li class="c-externalLinkList__slash">/</li>
+          <li>
+            <a href="./wip.html" class="c-externalLinkList__externalLink">
+              お問い合わせ
+            </a>
+          </li>
+        </ul>
+        <small class="c-footer__copyright">&copy;&nbsp;2020&nbsp;T&#046;K&#046;</small>
+      </footer>
+    </div>
+    <script src="./assets/javascripts/balzaque.3.5.1.landing.js"></script>
+  </body>
+</html>

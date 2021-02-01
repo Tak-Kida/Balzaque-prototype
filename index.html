@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="T.K." />
+    <meta name="description" content="..." />
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Balzaque&nbsp;&#124;&nbsp;コーヒーを気軽に&#12289;好きなだけ&#12290;</title>
+    <!-- Use jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- drawer.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css"
+    />
+    <!-- jquery & iScroll -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+    <!-- <script src="./assets/javascripts/drawer.js"></script> -->
+    <!--Other CSS-->
+    <link rel="stylesheet" href="./assets/stylesheets/reset.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/application.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/style_index.css" />
+  </head>
+  <body class="drawer drawer--right">
+    <div class="l-wrap">
+      <!-- 「カートにいれました」モーダル -->
+      <div class="l-modalWrap">
+        <div class="p-index-addToCartModal">
+          <div class="p-index-addToCartModal__modalHeader">
+            <div class="p-index-modalHeader__icon--crossMark">
+              <span></span>
+            </div>
+          </div>
+          <div class="p-index-addToCartModal__modalBody">
+            <h4>カートに入れました</h4>
+          </div>
+          <div class="p-index-addToCartModal__modalFooter">
+            <p class="p-index-modalFooter__closeBar">ウィンドウを閉じる</p>
+          </div>
+        </div>
+      </div>
+      <!-- Header -->
+      <header class="l-header">
+        <!-- SP style -->
+        <div class="l-header--SP">
+          <!-- ハンバーガーボタン -->
+          <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+          </button>
+          <!-- ナビゲーションの中身 -->
+          <nav class="drawer-nav">
+            <ul class="drawer-menu">
+              <li class="drawer-brand">Menu</li>
+              <li><a href="./landing.html" class="drawer-menu-item">service</a></li>
+              <li><a href="./wip.html" class="drawer-menu-item">cart</a></li>
+              <li><a href="./wip.html" class="drawer-menu-item">&nbsp;log&nbsp;in&nbsp;</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- PC style -->
+        <div class="l-header--PC">
+          <a href="#">
+            <img
+              src="./assets/images/logo.png"
+              alt="ロゴマーク"
+              class="c-header__logo"
+            />
+          </a>
+          <nav>
+            <ul class="c-header__navList">
+              <li>
+                <a href="./landing.html" class="c-navList__navLink">service</a>
+              </li>
+              <li>
+                <a href="./wip.html" class="c-navList__navLink">cart</a>
+              </li>
+              <li>
+                <a href="./wip.html" class="c-navList__navLink">
+                  &nbsp;log&nbsp;in&nbsp;
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="p-index-category">
+          <a href="#" class="p-index-category__categoryLink--all"></a>
+            <h4 class="p-index-categoryLink__lineUpText">すべてを表示する</h4>
+          </a>
+          <h2 class="p-index-category__title">カテゴリー</h2>
+          <ul class="p-index-category__categoryList">
+            <li>
+              <h4>テイスト</h4>
+              <a href="#" id="bitter-lineUp" class="p-index-categoryList__categoryLink taste" data-class="taste" data-type="bitter">ビター</a>
+              </br>
+              <a href="#" id="sweet-lineUp" class="p-index-categoryList__categoryLink taste" data-class="taste" data-type="sweet">スウィート</a>
+            </li>
+            <li>
+              <h4>舌ざわり</h4>
+              <a href="#" id="strong-lineUp" class="p-index-categoryList__categoryLink strength" data-class="strength" data-type="strong">濃い</a>
+              </br>
+              <a href="#" id="weak-lineUp" class="p-index-categoryList__categoryLink strength" data-class="strength" data-type="weak">やさしい</a>
+            </li>
+            <li>
+              <h4>ミルク</h4>
+              <a href="#" id="withMilk-lineUp" class="p-index-categoryList__categoryLink milk" data-class="milk" data-type="with">ミルク入り</a>
+              </br>
+              <a href="#" id="withoutMilk-lineUp" class="p-index-categoryList__categoryLink milk" data-class="milk" data-type="without">ミルクなし</a>
+            </li>
+            <li>
+              <h4>カフェイン</h4>
+              <a href="#" id="withCoffein-lineUp" class="p-index-categoryList__categoryLink caffein" data-class="caffein" data-type="with">カフェイン入り</a>
+              </br>
+              <a href="#" id="withoutCoffein-lineUp" class="p-index-categoryList__categoryLink caffein" data-class="caffein" data-type="without">カフェインフリー</a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-index-item">
+          <div class="p-index-item__bannerArea">
+            <a href="landing.html" class="p-index-bannerArea__banner">
+              <h2 class="p-index-banner__adText">キャンペーン実施中！！</h2>
+            </a>
+          </div>
+          <div class="p-index-item__searchArea">
+            <div class="p-index-searchArea__categoryBtn">
+              <h4 id="category-btn" class="p-index-categoryBtn__btnText">商品カテゴリ</h4>
+            </div>
+            <div class="p-index-searchArea__searchBar">
+              <input id="input_itemName--SP" type="text" class="p-index-searchBar__input" placeholder="商品名で検索"></input>
+              <div id="search-btn--SP" class="p-index-searchBar__searchBtn" type="text" value="">
+                <p class="p-index-searchBtn__btnText">検索</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-index-item__itemArea">
+            <div class="p-index-itemArea__categoryModal">
+              <h5 class="p-index-category__categoryLink--all">閉じる</h5>
+              <h4 class="p-index-categoryLink__lineUpText">すべてを表示する</h4>
+              <h2 class="p-index-category__title">カテゴリー</h2>
+              <ul class="p-index-category__categoryList">
+                <li>
+                  <h4>テイスト</h4>
+                  <a href="#itemIndex" id="bitter-lineUp" class="p-index-categoryList__categoryLink taste" data-class="taste" data-type="bitter">ビター</a>
+                  </br>
+                  <a href="#itemIndex" id="sweet-lineUp" class="p-index-categoryList__categoryLink taste" data-class="taste" data-type="sweet">スウィート</a>
+                </li>
+                <li>
+                  <h4>舌ざわり</h4>
+                  <a href="#itemIndex" id="strong-lineUp" class="p-index-categoryList__categoryLink strength" data-class="strength" data-type="strong">濃い</a>
+                  </br>
+                  <a href="#itemIndex" id="weak-lineUp" class="p-index-categoryList__categoryLink strength" data-class="strength" data-type="weak">やさしい</a>
+                </li>
+                <li>
+                  <h4>ミルク</h4>
+                  <a href="#itemIndex" id="withMilk-lineUp" class="p-index-categoryList__categoryLink milk" data-class="milk" data-type="with">ミルク入り</a>
+                  </br>
+                  <a href="#itemIndex" id="withoutMilk-lineUp" class="p-index-categoryList__categoryLink milk" data-class="milk" data-type="without">ミルクなし</a>
+                </li>
+                <li>
+                  <h4>カフェイン</h4>
+                  <a href="#itemIndex" id="withCoffein-lineUp" class="p-index-categoryList__categoryLink caffein" data-class="caffein" data-type="with">カフェイン入り</a>
+                  </br>
+                  <a href="#itemIndex" id="withoutCoffein-lineUp" class="p-index-categoryList__categoryLink caffein" data-class="caffein" data-type="without">カフェインフリー</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="p-index-itemArea__itemHeader">
+              <div class="p-index-itemHeader__titleZone">
+                <h1 id="itemIndex" class="p-index-itemTitle__listTitle">商品一覧</h1>
+                <small class="p-index-titleZone__caption--PC">&#042;画像をクリックすると詳細が現れます</small>
+                <small class="p-index-titleZone__caption--SP">&#042;画像をタップすると詳細が現れます</small>
+              </div>
+              <div class="p-index-itemHeader__searchArea">
+                <div class="p-index-searchArea__searchZone">
+                  <input id="input_itemName--PC" type="text" class="p-index-searchZone__input" placeholder="商品名で検索"></input>
+                  <div id="search-btn--PC" class="p-index-searchZone__searchBtn" type="text" value="">
+                    <p class="p-index-searchBtn__btnText">検索</p>
+                  </div>
+                </div>
+                <p class="p-index-searchZone__itemAmount">表示件数</p>
+              </div>
+              
+            </div>
+            <div class ="p-index-itemArea__itemField">
+              <ul class="p-index-itemField__itemList">
+                <h4 id="emptyText" class="p-index-itemList__emptyText">該当する商品はありませんでした</h4>
+                <!-- テスト用のデータ -->
+                <!-- <li id="item_No0" data-id="0" class="p-index-itemList__item">
+                  <div class="p-index-item__itemWrapper">
+                    <div class="p-index-itemWrapper__itemModal">
+                      <div class="p-index-itemModal__modalTop">
+                        <h4>商品名</h4>
+                        <br>
+                        <p class="p-index-modalTop__modalText">
+                          ここにテキストが入ります。<br>
+                          ここに商品の詳細のテキストが入ります。<br>
+                          ここにテキストが入ります。<br>
+                          ここに商品の詳細のテキストが入ります。<br>
+                          <br>
+                          ここにテキストが入ります。<br>
+                          ここに商品の詳細のテキストが入ります。<br>
+                          ここにテキストが入ります。<br>
+                          ここに商品の詳細のテキストが入ります。<br>
+                        </p>
+                      </div>
+                      <div class="p-index-itemModal__modalBottom">
+                        <div class="p-index-modalBottom__btn--close">
+                          <h4 class="p-index-btn__btnText">詳細を閉じる</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-index-item__imageBox">
+                      <img
+                        src="./assets/images/premium_roast.png"
+                        alt="bitter"
+                        class="p-index-imageBox__itemImg"
+                      />
+                    </div>
+                    <div class="p-index-item__detailBox">
+                      <h2 class="p-index-detailBox__itemName">プレミアムロースト</h2>
+                      <h3 class="p-index-detailBox__itemPrice">¥500</h3>
+                      <div class="p-index-detailBox__amount">
+                        <div class="p-index-amount__amountNote">個数：</div>
+                        <div class="p-index-amount__inputAmount">
+                          <input  class="p-index-amount__amountForm" type="number" name="num1" min="1" max="500" value="1" step="1" required>
+                        </div>
+                      </div>
+                      <div class="p-index-detailBox__btn--addToCart">
+                        <h4 class="p-index-btn__btn-text">カートに入れる</h4>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="l-footer">
+        <ul class="c-footer__externalLinkList">
+          <li>
+            <a href="background.html" class="c-externalLinkList__externalLink"
+              >サービス背景</a
+            >
+          </li>
+          <li class="c-externalLinkList__slash">/</li>
+          <li>
+            <a
+              href="https://github.com/Tak-Kida"
+              class="c-externalLinkList__externalLink"
+            >
+              運営者情報
+            </a>
+          </li>
+          <li class="c-externalLinkList__slash">/</li>
+          <li>
+            <a href="./wip.html" class="c-externalLinkList__externalLink">
+              お問い合わせ
+            </a>
+          </li>
+        </ul>
+        <small class="c-footer__copyright">&copy;&nbsp;2020&nbsp;T&#046;K&#046;</small>
+      </footer>
+    </div>  
+    <script src="./assets/javascripts/balzaque.3.5.1.index.js"></script>
+  </body>
+</html>
