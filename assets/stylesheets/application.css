@@ -103,15 +103,6 @@ body {
     right: 0;
   }
 
-  .drawer-nav {
-    /* background-color: rgba(0, 0, 0, 0); */
-  }
-
-  .drawer-menu {
-    /* background-color: rgba(0, 0, 0, 0); */
-    /* background-color: rgba(250, 0, 0, 0.8); */
-  }
-
   /* footer */
   .l-footer {
     height: 240px;
